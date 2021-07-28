@@ -1,0 +1,50 @@
+.catagory {
+    padding: 110px;
+
+    &-wrapper {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 265px 265px; 
+        gap: 22px 30px; 
+    }
+
+    &__item {
+        position: relative;
+
+        &-hover {
+            position: absolute;
+            display: flex;
+            align-items: flex-end;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 23px 28px;
+            opacity: 0;
+        }
+
+        &:hover {
+            .catagory__item-hover {
+                opacity: 1;
+                transition: ease-in-out .5s;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        &-1 {
+            grid-area: 1 / 1 / 2 / 7;
+        }
+        &-2 {
+            grid-area: 2 / 1 /3 / 4;
+        }
+        &-3 {
+            grid-area: 2 / 4 / 3 / 7;
+        }
+        &-4 {
+            grid-area: 1 / 7 / 3 / 13;
+        }
+    }
+}

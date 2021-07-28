@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+  include ./components/head/head.pug
+  body
+    mixin cart({title, oldPrice, price, img})
+      a.cart(href="#")
+          img(src=img, alt="")
+          .cart-wrapper 
+                  .cart__tag igure 
+                  .cart__title= title 
+                  .cart-price-wrapper 
+                      .cart__price.cart__price_old= oldPrice 
+                      .cart__price= price 
+
+    include ././components/header/header.pug
+    include ././components/main/main.pug
+    include ././components/catagory/catagory.pug
+    include ././components/catalog/catalog.pug
+    include ././components/styles/styles.pug
+    include ././components/tachen/tachen.pug
+    include ././components/footer/footer.pug

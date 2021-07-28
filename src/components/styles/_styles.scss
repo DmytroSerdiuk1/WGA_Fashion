@@ -1,0 +1,47 @@
+.styles {
+    padding-bottom: 120px;
+
+    &-wrapper {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    &-block {
+        &_left {
+            margin-top: 87px;
+        }
+
+        &_small {
+            position: absolute;
+            display: flex;
+            align-items: flex-end;
+            bottom: 0;
+            right: 0;
+            
+            img {
+                border-top: 22px solid #fff;
+                border-left: 25px solid #fff;
+            }
+        }
+    }
+
+    &-link {
+        position: relative;
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 32px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 100%;
+            height: 1px;
+            background: #000;
+        }
+    }
+}

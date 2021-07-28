@@ -1,0 +1,35 @@
+.main {
+    background-image: url('../img/main-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: top;
+    padding-top: 426px;
+    padding-bottom: 101px;
+
+    &-wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &-content {
+        &-tag {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            color: $text-color;
+        }
+
+        &-subtext {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            color: #22262A;
+        }
+
+        &-buttons {
+            margin-top: 27px;
+            display: flex;
+            gap: 34px;
+        }
+    }
+}
